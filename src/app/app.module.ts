@@ -50,14 +50,14 @@ import { CookieService } from 'ngx-cookie-service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule,
   ],
   providers: [
     CookieService,
