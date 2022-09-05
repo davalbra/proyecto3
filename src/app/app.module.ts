@@ -28,7 +28,8 @@ import { BodyPant3Component } from './pant/pant3/comp/body-pant3/body-pant3.comp
 import { BodyPant4Component } from './pant/pant4/comp/body-pant4/body-pant4.component';
 import { MainPant4Component } from './pant/pant4/pant/main-pant4/main-pant4.component';
 import { HeaderMainComponent } from './pant/main/comp/header-main/header-main.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,8 +57,10 @@ import { HeaderMainComponent } from './pant/main/comp/header-main/header-main.co
     ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   providers: [
+    CookieService,
     { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher },
   ],
   bootstrap: [AppComponent],
