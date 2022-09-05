@@ -18,6 +18,7 @@ export class BodyMainComponent implements OnInit {
   ngOnInit(): void {
     this.servicioFavorito.disparadorDeLiga.subscribe((data) => {
       this.listdeVideos = data?.data;
+
       this.fire.getDatosAll().subscribe((datos: any) => {
         this.firebas = [];
         for (let i = 0; i < datos.length; i++) {
