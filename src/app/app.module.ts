@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
 import { ButtonSetComponent } from './pant/main/comp/button-set/button-set.component';
 import { BodyMainComponent } from './pant/main/comp/body-main/body-main.component';
 import { MainComponent } from './pant/main/pant/main/main.component';
@@ -30,6 +32,8 @@ import { MainPant4Component } from './pant/pant4/pant/main-pant4/main-pant4.comp
 import { HeaderMainComponent } from './pant/main/comp/header-main/header-main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
+import { NavHeadComponent } from './pant/main/comp/nav-head/nav-head.component';
+import { CardsMainComponent } from './pant/main/comp/cards-main/cards-main.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +51,8 @@ import { CookieService } from 'ngx-cookie-service';
     BodyPant4Component,
     MainPant4Component,
     HeaderMainComponent,
+    NavHeadComponent,
+    CardsMainComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +64,8 @@ import { CookieService } from 'ngx-cookie-service';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
+    MatTabsModule,
+    MatCardModule,
   ],
   providers: [
     CookieService,

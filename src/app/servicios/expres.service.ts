@@ -14,13 +14,13 @@ export class ExpresService {
   getDatosAllOrganizacions() {
     return this.http.get('http://localhost:3000/organizacions');
   }
-  getDatosAllCopasrganizacions() {
+  getDatosAllCopas() {
     return this.http.get('http://localhost:3000/copas');
   }
   getDatosIdOrganizacions(dato: string) {
     return this.http.get(`http://localhost:3000/organizacions/${dato}`);
   }
-  getDatosIdCopasrganizacions(dato: string) {
+  getDatosIdCopas(dato: string) {
     return this.http.get(`http://localhost:3000/copas/${dato}`);
   }
 }
